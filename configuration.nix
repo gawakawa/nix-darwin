@@ -1,4 +1,4 @@
-{ pkgs, self, nix-darwin, nixpkgs, ... }:
+{ pkgs, self, nixpkgs, ... }:
 {
     # List packages installed in system profile. To search by name, run:
     # $ nix-env -qaP | grep wget
@@ -18,7 +18,20 @@
     nix.package = pkgs.nix;
 
     # Necessary for using flakes on this system.
-    nix.settings.experimental-features = "nix-command flakes";
+    nix = {
+        settings = {
+            auto-optimise-store = true;
+            experimental-features = "nix-command flakes";
+        };
+        # garbage collection
+        gc = {
+            automatic = true;
+            interval = {
+                Day = 7;
+            };
+            options = "--delete-older-than 7d";
+        };
+    };
 
     # Create /etc/zshrc that loads the nix-darwin environment.
     programs.zsh.enable = true;
