@@ -7,7 +7,6 @@
         postman
         docker
         utm
-        # google-chrome
     ];
 
     # Allow unfree packages
