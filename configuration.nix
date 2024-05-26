@@ -4,9 +4,13 @@
     # $ nix-env -qaP | grep wget
     environment.systemPackages = with pkgs; [
         vscode
-        postman
         docker
         utm
+        tree
+        rlwrap
+        awscli2
+        sqlite
+        slack
     ];
 
     # Allow unfree packages
