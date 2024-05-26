@@ -1,12 +1,12 @@
-{pkgs, ...}: 
+{ pkgs, ... }: 
 {
     programs.zsh = {
         enable = true;
         shellAliases = {
             lmk = "latexmk -pvc -c";
             updatedb = "sudo /usr/libexec/locate.updatedb";
-            # oj-bundle = "oj-bundle -I /Users/hasegawahiraku/atcoder/cpp_library";
-            # g++ = "g++ -std=c++23 -O2 -Wall -Wextra -Wshadow -g";
+            oj-bundle = "oj-bundle -I $HOME/kyopro/atcoder/cpp/mylib";
+            gpp = "g++ -std=c++23 -O2 -Wall -Wextra -Wshadow -g";
             idris2 = "rlwrap idris2 -p contrib";
             oj-t = "fourmolu -i Main.hs && oj t -c 'stack Main.hs'"; # oj test for Haskell
             ls = "ls -A";
