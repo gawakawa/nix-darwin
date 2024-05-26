@@ -11,6 +11,9 @@
         awscli2
         sqlite
         slack
+        discord
+        warp-terminal
+        texliveFull
     ];
 
     # Allow unfree packages
