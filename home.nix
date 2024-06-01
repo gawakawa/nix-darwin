@@ -4,7 +4,7 @@
         username = "kawa";
         homeDirectory = lib.mkForce "/Users/${username}";
         enableNixpkgsReleaseCheck = true;
-        stateVersion = "23.11";
+        stateVersion = "24.05";
         packages = with pkgs; [
             curl
             vscode
