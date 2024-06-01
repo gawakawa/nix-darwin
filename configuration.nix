@@ -10,10 +10,13 @@
         rlwrap
         awscli2
         sqlite
+        postgresql_jit
         slack
         discord
         warp-terminal
         texliveFull
+        go
+        wireshark
     ];
 
     # Allow unfree packages
