@@ -16,7 +16,11 @@
         warp-terminal
         texliveFull
         go
+        delve # go debugger
         wireshark
+        sqlite
+        pipx
+        python3
     ];
 
     # Allow unfree packages
