@@ -18,6 +18,6 @@
         ./zsh.nix
         ./git.nix
         ./direnv.nix
-        ./neovim.nix
+        # ./neovim.nix
     ];
 }
