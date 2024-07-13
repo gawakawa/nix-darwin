@@ -11,16 +11,22 @@
         awscli2
         sqlite
         postgresql_jit
+        # mysql84
+        # apacheKafka
         slack
         discord
-        warp-terminal
+        # warp-terminal
         texliveFull
         go
         delve # go debugger
         wireshark
-        sqlite
         pipx
         python3
+        # php
+        nodejs_22
+        deno
+        julia_19-bin
+	rustup
     ];
 
     # Allow unfree packages
