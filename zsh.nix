@@ -14,6 +14,11 @@
         };
         initExtra = ''
             export PATH=$HOME/.pack/bin:$PATH
+
+
+            mkcd() {
+                mkdir -p "$1" && cd "$1"
+            }
         '';
         prezto = {
             enable = true;
