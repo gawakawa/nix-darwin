@@ -26,7 +26,12 @@
         nodejs_22
         deno
         julia_19-bin
-	rustup
+	    rustup
+
+        # Fonts
+        fira-code
+        hackgen-font
+        plemoljp
     ];
 
     # Allow unfree packages
