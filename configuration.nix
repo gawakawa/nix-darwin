@@ -21,7 +21,7 @@
         nodejs_22
         julia_19-bin
         rustup
-        purescript
+        elan
 
         wireshark
         delve # go debugger
@@ -32,6 +32,8 @@
         fira-code
         hackgen-font
         plemoljp
+
+        dotnetCorePackages.dotnet_8.sdk
     ];
 
     # Allow unfree packages
