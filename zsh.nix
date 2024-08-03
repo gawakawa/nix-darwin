@@ -3,6 +3,7 @@
     programs.zsh = {
         enable = true;
         shellAliases = {
+            v="nvim";
             lmk = "latexmk -pvc -c";
             updatedb = "sudo /usr/libexec/locate.updatedb";
             oj-bundle = "oj-bundle -I $HOME/kyopro/atcoder/cpp/mylib";
@@ -11,6 +12,9 @@
             oj-t = "fourmolu -i Main.hs && oj t -c 'stack Main.hs'"; # oj test for Haskell
             ls = "ls -A";
             update = "darwin-rebuild switch --flake \".#mac\" --impure"; # update nix config
+            new = "cargo compete new";
+            test = "cargo compete test";
+            submit = "cargo compete submit";
         };
         initExtra = ''
             export PATH=$HOME/.pack/bin:$PATH
