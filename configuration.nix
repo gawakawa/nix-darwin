@@ -37,6 +37,9 @@
         dotnetCorePackages.dotnet_8.sdk
     ];
 
+    # Fonts
+    fonts.fonts = with pkgs; [ fira-code ];
+
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
