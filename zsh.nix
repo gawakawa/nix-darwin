@@ -18,6 +18,7 @@
         };
         initExtra = ''
             export PATH=$HOME/.pack/bin:$PATH
+            export PATH=$HOME/.deno/bin:$PATH
 
 
             mkcd() {
