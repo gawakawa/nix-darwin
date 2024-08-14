@@ -18,6 +18,7 @@
         ./zsh.nix
         ./git.nix
         ./direnv.nix
+        ./wezterm.nix
         # ./neovim.nix
     ];
 }
