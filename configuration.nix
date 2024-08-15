@@ -29,16 +29,16 @@
         pipx
         deno
 
-        # Fonts
-        fira-code
-        hackgen-font
-        plemoljp
-
         dotnetCorePackages.dotnet_8.sdk
     ];
 
-    # Fonts
-    fonts.fonts = with pkgs; [ fira-code ];
+    fonts = {
+        fonts = with pkgs; [
+            fira-code
+            fira-code-symbols
+        ];
+        fontDir.enable = true;
+    };
 
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
