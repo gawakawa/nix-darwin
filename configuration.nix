@@ -3,9 +3,7 @@
     # List packages installed in system profile. To search by name, run:
     # $ nix-env -qaP | grep wget
     environment.systemPackages = with pkgs; [
-        vscode
         starship
-        docker
         utm
         tree
         rlwrap
@@ -31,6 +29,30 @@
 
         dotnetCorePackages.dotnet_8.sdk
     ];
+
+    homebrew = {
+        enable = true;
+        onActivation.cleanup = "uninstall";
+
+        taps = [];
+        brews = [
+            "ghcup"
+            "mysql"
+            "neovim"
+            "php"
+            "tree-sitter"
+        ];
+        casks = [
+            "docker"
+            "google-chrome"
+            "multipass"
+            "notion"
+            "orbstack"
+            "postman"
+            "warp"
+            "zoom"
+        ];
+    };
 
     fonts = {
         fonts = with pkgs; [
