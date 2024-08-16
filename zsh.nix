@@ -19,7 +19,7 @@
         initExtra = ''
             export PATH=$HOME/.pack/bin:$PATH
             export PATH=$HOME/.deno/bin:$PATH
-
+            export NIX_PATH=$HOME/.nix-defexpr/channels:$NIX_PATH
 
             mkcd() {
                 mkdir -p "$1" && cd "$1"
