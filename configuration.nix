@@ -4,6 +4,7 @@
     # $ nix-env -qaP | grep wget
     environment.systemPackages = with pkgs; [
         discord
+        fd
         google-chrome
         rlwrap
         rustup
