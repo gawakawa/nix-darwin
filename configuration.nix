@@ -3,32 +3,15 @@
     # List packages installed in system profile. To search by name, run:
     # $ nix-env -qaP | grep wget
     environment.systemPackages = with pkgs; [
-        google-chrome
-        starship
-        utm
-        tree
-        rlwrap
-        awscli2
-        sqlite
-        postgresql_jit
-        slack
         discord
-        texliveFull
-
-        # Programming languages
-        go
-        python3
-        nodejs_22
-        julia_19-bin
+        google-chrome
+        rlwrap
         rustup
-        elan
-
+        slack
+        starship
+        tree
+        utm
         wireshark
-        delve # go debugger
-        pipx
-        deno
-
-        dotnetCorePackages.dotnet_8.sdk
         zoom-us
     ];
 
