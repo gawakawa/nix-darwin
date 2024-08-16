@@ -28,6 +28,7 @@
         deno
 
         dotnetCorePackages.dotnet_8.sdk
+        zoom-us
     ];
 
     homebrew = {
@@ -45,12 +46,10 @@
         casks = [
             "docker"
             "google-chrome"
-            "multipass"
             "notion"
             "orbstack"
             "postman"
             "warp"
-            "zoom"
         ];
     };
 
