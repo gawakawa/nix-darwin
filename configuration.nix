@@ -7,7 +7,6 @@
         fd
         google-chrome
         rlwrap
-        rustup
         slack
         starship
         tree
@@ -22,10 +21,7 @@
 
         taps = [];
         brews = [
-            "ghcup"
-            "mysql"
             "neovim"
-            "php"
             "tree-sitter"
         ];
         casks = [
@@ -33,7 +29,6 @@
             "notion"
             "orbstack"
             "postman"
-            "warp"
         ];
     };
 
