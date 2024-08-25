@@ -20,10 +20,7 @@
         onActivation.cleanup = "uninstall";
 
         taps = [];
-        brews = [
-            "neovim"
-            "tree-sitter"
-        ];
+        brews = [];
         casks = [
             "docker"
             "notion"

@@ -12,13 +12,13 @@
             oj-t = "fourmolu -i Main.hs && oj t -c 'stack Main.hs'"; # oj test for Haskell
             ls = "ls -A";
             update = "darwin-rebuild switch --flake \".#mac\" --impure"; # update nix config
+            nsh = "nix-shell";
             new = "cargo compete new";
             test = "cargo compete test";
             submit = "cargo compete submit";
         };
         initExtra = ''
             export PATH=$HOME/.pack/bin:$PATH
-            export PATH=$HOME/.deno/bin:$PATH
             export NIX_PATH=$HOME/.nix-defexpr/channels:$NIX_PATH
 
             mkcd() {

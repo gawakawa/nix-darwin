@@ -1,4 +1,4 @@
-{ lib, pkgs,  ... }:
+{ config, lib, pkgs,  ... }:
 {
     home = rec {
         username = "kawa";
@@ -9,8 +9,10 @@
             curl
             vscode
             idris2
-            purescript
         ];
+
+        # symbolic links
+        file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink ./nvim;
     };
     programs.home-manager.enable = true;
 
@@ -19,6 +21,6 @@
         ./git.nix
         ./direnv.nix
         ./wezterm.nix
-        # ./neovim.nix
+        ./neovim.nix
     ];
 }
