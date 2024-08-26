@@ -3,7 +3,10 @@
     # List packages installed in system profile. To search by name, run:
     # $ nix-env -qaP | grep wget
     environment.systemPackages = with pkgs; [
+        colima
         discord
+        docker
+        docker-compose
         fd
         google-chrome
         rlwrap
@@ -22,10 +25,7 @@
         taps = [];
         brews = [];
         casks = [
-            "docker"
             "notion"
-            "orbstack"
-            "postman"
         ];
     };
 
