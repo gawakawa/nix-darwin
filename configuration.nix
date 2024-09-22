@@ -9,6 +9,8 @@
         docker-compose
         fd
         google-chrome
+        httpie
+        postman
         rlwrap
         slack
         starship
