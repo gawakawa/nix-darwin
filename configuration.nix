@@ -8,6 +8,7 @@
         docker
         docker-compose
         fd
+        gh
         google-chrome
         httpie
         postman
