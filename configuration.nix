@@ -26,7 +26,9 @@
         onActivation.cleanup = "uninstall";
 
         taps = [];
-        brews = [];
+        brews = [
+            "ghcup"
+        ];
         casks = [
             "notion"
         ];
