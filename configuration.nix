@@ -28,6 +28,7 @@
         taps = [];
         brews = [
             "ghcup"
+            "gnu-time"
         ];
         casks = [
             "notion"
