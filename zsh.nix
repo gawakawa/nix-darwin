@@ -18,6 +18,7 @@
             submit = "cargo compete submit";
         };
         initExtra = ''
+            export PATH=$HOME/.local/bin:$PATH
             export PATH=$HOME/.pack/bin:$PATH
             export PATH=$HOME/.ghcup/bin:$PATH
             export NIX_PATH=$HOME/.nix-defexpr/channels:$NIX_PATH
