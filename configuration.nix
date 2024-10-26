@@ -30,10 +30,16 @@
         brews = [
             "ghcup"
             "gnu-time"
+            "mas"
         ];
         casks = [
             "notion"
         ];
+        masApps = {
+            "LINE" = 539883307;
+            "Goodnotes 6" = 1444383602;
+            "Kindle" = 302584613;
+        };
     };
 
     fonts = {
