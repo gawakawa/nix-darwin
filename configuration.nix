@@ -11,6 +11,7 @@
         gh
         google-chrome
         httpie
+        nushell
         postman
         rlwrap
         slack
