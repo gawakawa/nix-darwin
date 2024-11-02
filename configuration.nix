@@ -33,6 +33,7 @@
             "mas"
         ];
         casks = [
+            "claude"
             "notion"
         ];
         masApps = {
