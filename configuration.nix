@@ -14,6 +14,7 @@
         httpie
         nushell
         postman
+        qemu
         rlwrap
         rustup
         slack
