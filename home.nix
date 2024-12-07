@@ -22,5 +22,6 @@
         ./direnv.nix
         ./wezterm.nix
         ./neovim.nix
+        ./starship.nix
     ];
 }
