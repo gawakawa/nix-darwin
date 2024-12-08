@@ -1,11 +1,18 @@
 require ('kawa/basic_config')
 require ('kawa/setup_plugin')
-require ('kawa/plugins/colorscheme')
-require ('kawa/plugins/nvim_tree')
--- 私は、leaderはSpaceキーを当てています。下の割当だと、Spaceキーとeを同時押しすることで、ファイルツリーが表示されます。leaderキーの設定方法は後述します。
--- api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', {silent=true})
-
+require('kawa/plugins/colorscheme')
+require('kawa/plugins/nvim_web_devicons')
+require('kawa/plugins/lualine')
+require('kawa/plugins/nvim_cursorline')
+require('kawa/plugins/auto_save')
+require('kawa/plugins/colorizer')
+require('kawa/plugins/gitsigns')
+require('kawa/plugins/bufferline')
+require('kawa/plugins/indentscope')
+require('kawa/plugins/toggleterm')
+require('kawa/plugins/nvim_tree')
 require("telescope").load_extension "file_browser"
+
 vim.api.nvim_set_keymap(
   "n",
   "<space>ff",
@@ -26,16 +33,6 @@ vim.keymap.set('n', '<leader>p', builtin.find_files, {})
 vim.keymap.set('n', '<leader>f', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-
-require ('kawa/plugins/nvim_web_devicons')
-require ('kawa/plugins/lualine')
-require ('kawa/plugins/nvim_cursorline')
-require ('kawa/plugins/auto_save')
-require ('kawa/plugins/colorizer')
-require ('kawa/plugins/gitsigns')
-require ('kawa/plugins/bufferline')
-require ('kawa/plugins/indentscope')
-require ('kawa/plugins/toggleterm')
 
 vim.g.mapleader = ' ' -- 半角スペースを設定しています。
 vim.keymap.set('i', 'jj', '<ESC>', {silent=true}) -- インサートモードを抜ける
