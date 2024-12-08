@@ -21,7 +21,6 @@
         starship
         tree
         utm
-        wireshark
         zoom-us
     ];
 
@@ -63,7 +62,6 @@
     # Necessary for using flakes on this system.
     nix = {
         settings = {
-            auto-optimise-store = true;
             experimental-features = "nix-command flakes";
         };
         # garbage collection
@@ -74,6 +72,8 @@
             };
             options = "--delete-older-than 7d";
         };
+
+        optimise.automatic = true;
     };
 
     # Create /etc/zshrc that loads the nix-darwin environment.
