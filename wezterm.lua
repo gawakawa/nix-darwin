@@ -14,8 +14,8 @@ return {
     },
     macos_window_background_blur = 20,
 
-    initial_cols = 100,
-    initial_rows = 30,
+    initial_cols = 150,
+    initial_rows = 45,
 
     show_tabs_in_tab_bar = true,
 
