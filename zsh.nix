@@ -11,7 +11,7 @@
             idris2 = "rlwrap idris2 -p contrib";
             oj-t = "fourmolu -i Main.hs && oj t -c 'stack Main.hs'"; # oj test for Haskell
             ls = "ls -A";
-            update = "darwin-rebuild switch --flake \".#mac\" --impure"; # update nix config
+            nrs = "cd $HOME/.config/nix-darwin && darwin-rebuild switch --flake \".#mac\" --impure && cd -"; # update nix config
             nsh = "nix-shell";
             new = "cargo compete new";
             test = "cargo compete test";
