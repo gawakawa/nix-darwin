@@ -29,7 +29,7 @@
         '';
         prezto = {
             enable = true;
-            prompt.theme = "pure";
+            # prompt.theme = "pure";
             pmodules = [
                 "environment"
                 "terminal"
