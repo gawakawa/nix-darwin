@@ -3,7 +3,7 @@
         enable = true;
         # Configuration written to ~/.config/starship.toml
         settings = {
-            add_newline = false;
+            add_newline = true;
 
             character = {
                 success_symbol = "[λ](bold green)";
