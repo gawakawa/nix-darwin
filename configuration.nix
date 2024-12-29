@@ -36,6 +36,7 @@
         ];
         casks = [
             "claude"
+            "logi-options+"
             "notion"
         ];
         masApps = {
