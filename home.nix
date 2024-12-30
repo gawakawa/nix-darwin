@@ -10,9 +10,6 @@
             vscode
             idris2
         ];
-
-        # symbolic links
-        file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink ./nvim;
     };
     programs.home-manager.enable = true;
 
