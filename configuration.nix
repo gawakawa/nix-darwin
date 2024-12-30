@@ -10,6 +10,7 @@
         docker-compose
         fd
         gh
+        gitmoji-cli
         google-chrome
         httpie
         nushell
