@@ -12,6 +12,7 @@
         gh
         gitmoji-cli
         google-chrome
+        google-cloud-sdk
         httpie
         nushell
         postman
