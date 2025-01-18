@@ -1,7 +1,23 @@
 local wezterm = require("wezterm")
 
 return {
-    font = wezterm.font("Fira Code"),
+    font = wezterm.font({
+      family = "FiraCode Nerd Font",
+      harfbuzz_features = {
+        "cv02",
+        "cv24",
+        "cv25",
+        "cv26",
+        "cv28",
+        "cv29",
+        "cv30",
+        "cv32",
+        "ss03",
+        "ss05",
+        "ss07",
+        "ss09",
+      },
+    }),
     font_size = 15.0,
 
     use_ime = true,
