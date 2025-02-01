@@ -39,6 +39,7 @@
         ];
         casks = [
             "claude"
+            "cursor"
             "logi-options+"
             "notion"
         ];
