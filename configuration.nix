@@ -8,6 +8,7 @@
         discord
         docker
         docker-compose
+        docker-credential-helpers
         fd
         gh
         gitmoji-cli
