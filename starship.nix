@@ -33,7 +33,6 @@
               "git_branch"
               "git_status"
               "cmd_duration"
-              "line"
               "time"
               "character"
             ];
