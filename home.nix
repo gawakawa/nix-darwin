@@ -1,7 +1,7 @@
 { config, lib, pkgs,  ... }:
 {
     home = rec {
-        username = "kawa";
+        username = "iota";
         homeDirectory = lib.mkForce "/Users/${username}";
         enableNixpkgsReleaseCheck = true;
         stateVersion = "24.11";
@@ -15,7 +15,6 @@
 
     imports = [
         ./zsh.nix
-        ./git.nix
         ./direnv.nix
         ./wezterm.nix
         ./neovim.nix

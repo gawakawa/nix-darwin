@@ -5,7 +5,7 @@ return {
     family = "FiraCode Nerd Font",
     harfbuzz_features = {
       "cv02",
-      "cv24", 
+      "cv24",
       "cv25",
       "cv26",
       "cv28",
@@ -53,9 +53,9 @@ return {
   background = {
     {
       source = {
-        File = "/Users/kawa/Downloads/momo.jpg",
+        File = "/Users/iota/Downloads/shami_momo.jpg",
       },
-			opacity = 0.08,
+      opacity = 0.08,
     },
   },
 }

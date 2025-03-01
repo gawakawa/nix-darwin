@@ -58,28 +58,13 @@
         ];
     };
 
-    # Allow unfree packages
-    nixpkgs.config.allowUnfree = true;
-
-    # Auto upgrade nix package and the daemon service.
-    services.nix-daemon.enable = true;
-    nix.package = pkgs.nix;
-
     # Necessary for using flakes on this system.
     nix = {
+        enable = false;
+        package = pkgs.nix;
         settings = {
             experimental-features = "nix-command flakes";
         };
-        # garbage collection
-        gc = {
-            automatic = true;
-            interval = {
-                Day = 7;
-            };
-            options = "--delete-older-than 7d";
-        };
-
-        optimise.automatic = true;
     };
 
     # Create /etc/zshrc that loads the nix-darwin environment.
@@ -94,6 +79,8 @@
         stateVersion = 4;
     };
 
-    # The platform the configuration will be used on.
-    nixpkgs.hostPlatform = "aarch64-darwin";
+    nixpkgs = {
+        config.allowUnfree = true;
+        hostPlatform = "aarch64-darwin";
+    };
 }

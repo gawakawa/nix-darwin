@@ -52,15 +52,6 @@
                 error_symbol = "[λ](bold red)";
             };
 
-            modules = [
-              "directory"
-              "git_branch"
-              "git_status"
-              "cmd_duration"
-              "time"
-              "character"
-            ];
-
             format = "$directory$git_branch $git_status$git_metrics$cmd_duration$fill $time\n$character";
 
             fill = {

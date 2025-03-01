@@ -4,7 +4,7 @@
 	inputs = {
 		nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 		nix-darwin = {
-			url = "github:LnL7/nix-darwin";
+			url = "github:LnL7/nix-darwin/master";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 		home-manager = {
@@ -18,7 +18,6 @@
 		# Build darwin flake using:
 		# $ darwin-rebuild build --flake ".#mac" --impure
 		darwinConfigurations."mac" = nix-darwin.lib.darwinSystem {
-			system = "aarch64-darwin";
 			modules = [ 
 				./configuration.nix 
 				# home-manager
@@ -28,7 +27,7 @@
 						backupFileExtension = "backup";
 						useGlobalPkgs = true;
 						useUserPackages = true;
-						users.kawa = import /Users/kawa/.config/nix-darwin/home.nix;
+						users.iota = import /Users/iota/.config/nix-darwin/home.nix;
 					};
 				}
 			];
