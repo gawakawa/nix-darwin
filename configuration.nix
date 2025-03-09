@@ -43,6 +43,7 @@
             "cursor"
             "logi-options+"
             "notion"
+            "visual-studio-code"
         ];
         masApps = {
             "LINE" = 539883307;
