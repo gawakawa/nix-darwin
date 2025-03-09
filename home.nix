@@ -16,6 +16,7 @@
     imports = [
         ./zsh.nix
         ./direnv.nix
+	./git.nix
         ./wezterm.nix
         ./neovim.nix
         ./starship.nix
