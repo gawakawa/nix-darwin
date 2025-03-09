@@ -16,6 +16,7 @@
         google-chrome
         google-cloud-sdk
         httpie
+        neofetch
         nushell
         postman
         qemu
