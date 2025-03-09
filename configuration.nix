@@ -44,6 +44,7 @@
             "logi-options+"
             "notion"
             "visual-studio-code"
+            "wezterm"
         ];
         masApps = {
             "LINE" = 539883307;
