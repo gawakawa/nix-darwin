@@ -55,7 +55,7 @@ return {
       source = {
         File = "/Users/iota/Downloads/shami_momo.jpg",
       },
-      opacity = 0.08,
+      opacity = 0.15,
     },
   },
 }
