@@ -21,7 +21,7 @@ return {
   font_size = 15.0,
 
   use_ime = true,
-  window_background_opacity = 0.8,
+  window_background_opacity = 1,
   window_padding = {
     left = 10,
     right = 10,
@@ -55,7 +55,7 @@ return {
       source = {
         File = "/Users/iota/Downloads/shami_momo.jpg",
       },
-      opacity = 0.15,
+      opacity = 0.2,
     },
   },
 }
