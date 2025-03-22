@@ -27,7 +27,7 @@
 						backupFileExtension = "backup";
 						useGlobalPkgs = true;
 						useUserPackages = true;
-						users.iota = import /Users/iota/.config/nix-darwin/home.nix;
+						users.iota = import ./home.nix;
 					};
 				}
 			];
