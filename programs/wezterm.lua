@@ -53,7 +53,7 @@ return {
   background = {
     {
       source = {
-        File = "/Users/iota/Downloads/shami_momo.jpg",
+        File = wezterm.home_dir .. "/.config/nix-darwin/programs/images/shami_momo.jpg",
       },
       opacity = 0.2,
     },
