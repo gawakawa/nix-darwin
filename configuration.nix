@@ -5,6 +5,7 @@
     environment.systemPackages = with pkgs; [
         awscli2
         colima
+        claude-code
         direnv
         discord
         docker
