@@ -18,11 +18,8 @@
         google-cloud-sdk
         httpie
         neofetch
-        nushell
-        postman
         qemu
         rlwrap
-        rustup
         slack
         starship
         tree
@@ -36,14 +33,11 @@
 
         taps = [];
         brews = [
-            "ghcup"
             "gnu-time"
             "mas"
         ];
         casks = [
             "claude"
-            "cursor"
-            "logi-options+"
             "notion"
             "visual-studio-code"
             "wezterm"
