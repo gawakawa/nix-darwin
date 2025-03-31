@@ -35,8 +35,9 @@
           buildInputs = with pkgs; [
             purs
             spago-unstable
-            purs-tidy-bin.purs-tidy-0_10_0
+            purs-tidy
             purs-backend-es
+            purescript-language-server
             nodejs_23
             esbuild
           ];
