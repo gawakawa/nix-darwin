@@ -81,4 +81,10 @@
         config.allowUnfree = true;
         hostPlatform = "aarch64-darwin";
     };
+
+    # Define user
+    users.users.iota = {
+        name = "iota";
+        home = "/Users/iota";
+    };
 }

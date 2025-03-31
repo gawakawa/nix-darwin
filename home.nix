@@ -1,8 +1,6 @@
 { config, lib, pkgs,  ... }:
 {
-  home = rec {
-    username = "iota";
-    homeDirectory = lib.mkForce "/Users/${username}";
+  home = {
     enableNixpkgsReleaseCheck = true;
     stateVersion = "24.11";
     packages = with pkgs; [

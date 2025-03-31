@@ -27,6 +27,7 @@
 						backupFileExtension = "backup";
 						useGlobalPkgs = true;
 						useUserPackages = true;
+						extraSpecialArgs = { inherit (inputs) self nixpkgs; };
 						users.iota = import ./home.nix;
 					};
 				}
