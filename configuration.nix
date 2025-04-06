@@ -20,12 +20,10 @@
     neofetch
     qemu
     rlwrap
-    skhd
     slack
     starship
     tree
     utm
-    yabai
     zoom-us
   ];
 
@@ -39,6 +37,7 @@
       "mas"
     ];
     casks = [
+      "amethyst"
       "claude"
       "notion"
       "visual-studio-code"
