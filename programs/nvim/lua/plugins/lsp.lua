@@ -28,13 +28,22 @@ return {
       "williamboman/mason-lspconfig.nvim",
     },
     config = function()
+      -- Configure diagnostics display
+      vim.diagnostic.config({
+        virtual_text = true,
+        signs = true,
+        underline = true,
+        update_in_insert = false,
+        severity_sort = true,
+      })
+
+      -- LSP server setup
       require("lspconfig").hls.setup {}
       require("lspconfig").idris2_lsp.setup {}
       require("lspconfig").lua_ls.setup {}
       require("lspconfig").prismals.setup {}
       require("lspconfig").purescriptls.setup {}
       require("lspconfig").rust_analyzer.setup {}
-      require("lspconfig").ts_ls.setup {}
     end,
   },
 }
