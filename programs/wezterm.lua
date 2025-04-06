@@ -55,7 +55,7 @@ return {
       source = {
         File = wezterm.home_dir .. "/.config/nix-darwin/programs/images/shami_momo.jpg",
       },
-      opacity = 0.2,
+      opacity = 0.25,
     },
   },
 }
