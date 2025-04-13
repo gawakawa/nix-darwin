@@ -4,13 +4,9 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     awscli2
-    colima
     claude-code
     direnv
     discord
-    docker
-    docker-compose
-    docker-credential-helpers
     fd
     gh
     gitmoji-cli
