@@ -45,6 +45,7 @@ return {
       require("lspconfig").prismals.setup {}
       require("lspconfig").purescriptls.setup {}
       require("lspconfig").rust_analyzer.setup {}
+      require("lspconfig").terraformls.setup {}
     end,
   },
 }
