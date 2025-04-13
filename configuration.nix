@@ -23,6 +23,7 @@
     slack
     starship
     tree
+    treefmt
     utm
     zoom-us
   ];
