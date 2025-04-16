@@ -16,6 +16,7 @@ return {
       require("mason-lspconfig").setup {
         ensure_installed = {
           "purescriptls",
+          "rust_analyzer",
         },
         automatic_installation = true,
       }
@@ -41,10 +42,18 @@ return {
       require("lspconfig").denols.setup {}
       require("lspconfig").hls.setup {}
       require("lspconfig").idris2_lsp.setup {}
-      require("lspconfig").lua_ls.setup {}
+      -- require("lspconfig").lua_ls.setup {}
       require("lspconfig").prismals.setup {}
       require("lspconfig").purescriptls.setup {}
-      require("lspconfig").rust_analyzer.setup {}
+      require("lspconfig").rust_analyzer.setup({
+        settings = {
+          ["rust-analyzer"] = {
+            check = {
+              command = "clippy",
+            }
+          }
+        }
+      }) 
       require("lspconfig").terraformls.setup {}
     end,
   },
