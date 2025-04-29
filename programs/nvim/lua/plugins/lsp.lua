@@ -45,7 +45,6 @@ return {
         root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
       }
       require("lspconfig").hls.setup {}
-      require("lspconfig").idris2_lsp.setup {}
       -- require("lspconfig").lua_ls.setup {}
       require("lspconfig").prismals.setup {}
       require("lspconfig").purescriptls.setup {}
