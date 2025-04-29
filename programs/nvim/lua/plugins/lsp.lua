@@ -15,6 +15,7 @@ return {
     config = function()
       require("mason-lspconfig").setup {
         ensure_installed = {
+          "denols",
           "purescriptls",
           "rust_analyzer",
         },
@@ -39,7 +40,10 @@ return {
       })
 
       -- LSP server setup
-      require("lspconfig").denols.setup {}
+      require("lspconfig").denols.setup {
+        on_attach = on_attach,
+        root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
+      }
       require("lspconfig").hls.setup {}
       require("lspconfig").idris2_lsp.setup {}
       -- require("lspconfig").lua_ls.setup {}
