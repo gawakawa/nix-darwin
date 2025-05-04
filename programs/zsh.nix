@@ -18,6 +18,7 @@
             submit = "cargo compete submit";
         };
         initContent = ''
+            export PATH=$HOME/.deno/bin: $PATH
             export PATH=$HOME/.local/bin:$PATH
             export PATH=$HOME/.pack/bin:$PATH
             export PATH=$HOME/.ghcup/bin:$PATH
