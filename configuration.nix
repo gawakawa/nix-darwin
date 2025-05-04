@@ -21,7 +21,6 @@
     tree
     treefmt
     utm
-    zoom-us
   ];
 
   homebrew = {
