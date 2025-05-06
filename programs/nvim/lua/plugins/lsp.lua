@@ -41,8 +41,32 @@ return {
 
       -- LSP server setup
       require("lspconfig").denols.setup {
-        on_attach = on_attach,
+        on_attach = function(client, bufnr)
+          -- Enable formatting on save for Deno projects
+          if client.server_capabilities.documentFormattingProvider then
+            vim.api.nvim_create_autocmd("BufWritePre", {
+              buffer = bufnr,
+              callback = function()
+                vim.lsp.buf.format({ async = false })
+              end,
+            })
+          end
+        end,
         root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
+        settings = {
+          deno = {
+            enable = true,
+            lint = true,
+            unstable = false,
+            suggest = {
+              imports = {
+                hosts = {
+                  ["https://deno.land"] = true,
+                },
+              },
+            },
+          },
+        },
       }
       require("lspconfig").hls.setup {}
       -- require("lspconfig").lua_ls.setup {}
