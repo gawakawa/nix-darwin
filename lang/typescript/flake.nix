@@ -12,7 +12,10 @@
       {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
+            deno
             nodejs_22
+            pnpm
+            yarn-berry
           ];
 
           shellHook = ''
@@ -21,4 +24,4 @@
         };
       }
     );
-} 
+}
