@@ -1,4 +1,9 @@
-{ pkgs, self, nixpkgs, ... }:
+{
+  pkgs,
+  self,
+  nixpkgs,
+  ...
+}:
 {
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
@@ -14,6 +19,7 @@
     google-cloud-sdk
     httpie
     neofetch
+    nixfmt-rfc-style
     qemu
     rlwrap
     slack
@@ -28,7 +34,7 @@
     enable = true;
     onActivation.cleanup = "uninstall";
 
-    taps = [];
+    taps = [ ];
     brews = [
       "gnu-time"
       "mas"
