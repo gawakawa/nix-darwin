@@ -51,24 +51,8 @@ return {
 						check = {
 							command = "clippy",
 						},
-						imports = {
-							granularity = {
-								group = "module",
-							},
-						},
 					},
 				},
-				on_attach = function(client, bufnr)
-					-- Enable formatting on save
-					if client.server_capabilities.documentFormattingProvider then
-						vim.api.nvim_create_autocmd("BufWritePre", {
-							buffer = bufnr,
-							callback = function()
-								vim.lsp.buf.format({ async = false })
-							end,
-						})
-					end
-				end,
 			})
 			require("lspconfig").terraformls.setup({})
 		end,

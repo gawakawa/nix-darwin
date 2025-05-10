@@ -21,6 +21,7 @@ return {
 			json = { "deno_fmt" },
 			jsonc = { "deno_fmt" },
 			lua = { "stylua" },
+			rust = { "rustfmt" },
 			typescript = { "deno_fmt" },
 			typescriptreact = { "deno_fmt" },
 		},
