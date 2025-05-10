@@ -4,6 +4,7 @@
         enable = true;
         shellAliases = {
             v="nvim";
+            c="claude";
             lmk = "latexmk -pvc -c";
             updatedb = "sudo /usr/libexec/locate.updatedb";
             oj-bundle = "oj-bundle -I $HOME/kyopro/atcoder/cpp/mylib";
