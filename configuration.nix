@@ -18,6 +18,7 @@
     rlwrap
     slack
     starship
+    stylua
     tree
     treefmt
     utm
