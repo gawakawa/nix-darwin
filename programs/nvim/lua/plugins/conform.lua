@@ -14,7 +14,15 @@ return {
 	},
 	opts = {
 		formatters_by_ft = {
+			css = { "deno_fmt" },
+			html = { "deno_fmt" },
+			javascript = { "deno_fmt" },
+			javascriptreact = { "deno_fmt" },
+			json = { "deno_fmt" },
+			jsonc = { "deno_fmt" },
 			lua = { "stylua" },
+			typescript = { "deno_fmt" },
+			typescriptreact = { "deno_fmt" },
 		},
 		default_format_opts = {
 			lsp_format = "fallback",
