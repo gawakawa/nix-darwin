@@ -15,6 +15,7 @@ return {
 	opts = {
 		formatters_by_ft = {
 			css = { "deno_fmt" },
+			haskell = { "fourmolu" },
 			html = { "deno_fmt" },
 			javascript = { "deno_fmt" },
 			javascriptreact = { "deno_fmt" },
@@ -31,6 +32,6 @@ return {
 		default_format_opts = {
 			lsp_format = "fallback",
 		},
-		format_on_save = { timeout_ms = 500 },
+		format_on_save = { timeout_ms = 3000 },
 	},
 }
