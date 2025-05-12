@@ -25,6 +25,7 @@
     slack
     starship
     stylua
+    tart
     tree
     treefmt
     utm
