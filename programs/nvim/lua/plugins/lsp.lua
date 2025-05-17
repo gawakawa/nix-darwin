@@ -16,6 +16,7 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"denols",
+					"hls",
 					"purescriptls",
 					"rust_analyzer",
 				},
@@ -58,3 +59,4 @@ return {
 		end,
 	},
 }
+
