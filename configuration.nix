@@ -9,6 +9,7 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     awscli2
+    bat
     claude-code
     direnv
     discord
