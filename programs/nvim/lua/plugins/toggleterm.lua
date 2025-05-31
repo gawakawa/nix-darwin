@@ -3,6 +3,8 @@ return {
 	version = "*",
 	config = function()
 		require("toggleterm").setup({
+			auto_scroll = true,
+			direction = "float",
 			open_mapping = [[<c-t>]],
 			size = 20,
 			start_in_insert = true,
