@@ -4,6 +4,7 @@ return {
 	config = function()
 		require("toggleterm").setup({
 			open_mapping = [[<c-t>]],
+			size = 20,
 			start_in_insert = true,
 			highlights = {
 				Normal = {
