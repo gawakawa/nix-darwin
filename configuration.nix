@@ -49,7 +49,6 @@
       "wezterm"
     ];
     masApps = {
-      "Docko" = 6743445976;
       "LINE" = 539883307;
       "Goodnotes 6" = 1444383602;
       "Kindle" = 302584613;
