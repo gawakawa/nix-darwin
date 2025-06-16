@@ -6,6 +6,10 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    rustowl = {
+      url = "github:nix-community/rustowl-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -13,6 +17,7 @@
       nixpkgs,
       flake-utils,
       rust-overlay,
+      rustowl,
       ...
     }:
     flake-utils.lib.eachDefaultSystem (
@@ -25,8 +30,9 @@
       in
       {
         devShells.default = pkgs.mkShell {
-          packages = [
-            pkgs.rust-bin.stable.latest.default
+          packages = with pkgs; [
+            rust-bin.stable.latest.default
+            rustowl.packages.${system}.rustowl
           ];
         };
       }
