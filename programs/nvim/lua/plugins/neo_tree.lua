@@ -13,8 +13,8 @@ return {
    config = function()
       require("neo-tree").setup({
         window = {
+          position = "right",
           width = 30,
-          side = "left",
           auto_resize = true,
         },
         filesystem = {
